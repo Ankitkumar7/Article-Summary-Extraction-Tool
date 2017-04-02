@@ -14,7 +14,7 @@ def newsSummary(url):
     article = Article(url.strip())
     article.download()
     article.parse()
-    summary = article.text[0:150]
+    summary = article.text[0:150]#remove slice if you need entire article summary
     return summary
 
 def newsPublishedDate(url):
